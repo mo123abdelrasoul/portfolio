@@ -1,0 +1,426 @@
+/* Start Public Style */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #222;
+    color: #fff;
+}
+.container {
+    width: 88%;
+    margin: auto;
+    overflow: hidden;
+}
+/* End Public Style */
+
+/* Start Header Section */
+header {
+    background: #333;
+    padding: 10px 0;
+}
+.nav-menu {
+    display: block; /* إخفاء القائمة افتراضيًا */
+}
+.menu-button {
+    display: none;
+    background-color: #333; /* لون الخلفية */
+    color: #fff; /* لون النص */
+    border: none; /* بدون حدود */
+    padding: 10px; /* حواف */
+    cursor: pointer; /* تغيير شكل المؤشر عند التمرير */
+    font-size: 24px; /* حجم النص */
+    border-radius: 5px; /* جعل الزر دائري الزوايا */
+}
+.title {
+    float: left;
+    font-size: 24px;
+    line-height: 55px;
+}
+nav {
+    float: right;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #007bff;
+}
+/* End Header Section */
+
+/* Start Profile Section */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 40px;
+    background-color: #444;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    height: 400px;
+}
+.profile img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+/* End Profile Section */
+
+/* Start Show Profile Picture Modal Section */
+#profileModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+#profileModal .modal-content {
+    background-color: #333;
+    margin: 3% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    max-width: 800px;
+    max-height: 80%;
+    overflow-y: auto;
+    border-radius: 8px;
+    text-align: center;
+}
+#profileModal .modal img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+/* End Show Profile Picture Modal Section */
+
+/* Start Projects Style */
+.intro {
+    padding-left: 20px;
+}
+.projects {
+    background-color: #444;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+}
+.projects h2 {
+    text-align: center;
+    color: #fff;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.project-card {
+    background: #555;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.project-card h3 {
+    margin: 10px!important;
+}
+.project-card:hover {
+    transform: scale(1.05);
+    background-color: #666;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+/* End Projects Style */
+
+/* Start Show Project Description Modal Section */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.modal-content {
+    background-color: #444;
+    margin: 2% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 8px;
+}
+.modal h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.modal img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+.modal-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* 250px هو عرض الصورة الأدنى */
+    gap: 10px;
+}
+.modal-images img {
+    width: 100%;
+    height: auto;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+#modalImages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+#modalImages img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+.view-website {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #666;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.view-website:hover {
+    background-color: #0056b3;
+}
+/* End Show Project Description Modal Section */
+
+/* Start Skills Section */
+.skills {
+    background-color: #222;
+    color: #fff;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    text-align: center;
+}
+.skills h2 {
+    margin-bottom: 20px;
+}
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skill-item {
+    background: #444;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1 1 150px;
+    transition: transform 0.2s ease;
+}
+.skill-item:hover {
+    background: #666;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+/* End Skills Section */
+
+/* Start Contacts Section */
+.contact {
+    background-color: #444;
+    color: #fff;
+    padding: 20px 30px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.info-item {
+    margin: 15px 0;
+}
+.contact-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+.contact-link:hover {
+    color: #00bfff;
+}
+.contact-link i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.social-links a {
+    margin: 0 15px 0 0;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.social-links a:hover {
+    color: #00bfff;
+}
+.social-links i {
+    font-size: 24px;
+}
+/* End Contacts Section */
+
+/* Start Download Section */
+.download-section {
+    color: #fff;
+    padding: 20px 20px 50px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #444;
+}
+.download-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.download-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.download-button {
+    padding: 10px 20px;
+    background-color: #666;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.download-button:hover {
+    background-color: #0056b3;
+}
+/* End Download Section */
+
+/* Start Footer Section */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
+/* End Footer Section */
+
+@media (max-width: 768px) {
+    .menu-button {
+        display: block;
+        float: right;
+        margin-top: 10px;
+    }
+    .nav-menu {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    .container {
+        width: 100%!important;
+        position: relative;
+    }
+    .container .title,
+    .container .menu-button {
+        padding: 0 20px;
+    }
+    .nav-menu ul {
+        padding-left: 0;
+    }
+    .hero {
+        grid-template-columns: 1fr;
+        height: auto;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .profile img {
+        width: 200px;
+        height: 200px;
+    }
+    .projects .grid {
+        grid-template-columns: 1fr;
+    }
+    .skills .skill-list {
+        flex-direction: column;
+    }
+    .skill-item {
+        flex: 1 1 50px;
+    }
+    .contact-info {
+        align-items: center;
+    }
+    .download-button {
+        width: 100%;
+    }
+    .projects .grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .social-links a {
+        flex: 1 1 30%;
+        margin: 5px;
+        text-align: center;
+    }
+    .contact-info {
+        align-items: flex-start;
+    }
+}
