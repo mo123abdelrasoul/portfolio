@@ -1,3 +1,73 @@
+  document.addEventListener("DOMContentLoaded", function () {
+    new Swiper('.project-wrapper', {
+        loop: true,
+        spaceBetween:30,
+
+    // Pagination Bullets
+        pagination: {
+            el: '.swiper-pagination',
+            clickable:true,
+            dynamicBullets:true
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // Responsive Breakpoints
+        breakpoints: {
+            0: {
+                slidesPerView: 1
+            },
+            768: {
+                slidesPerView: 2
+            },
+            1024: {
+                slidesPerView: 3
+            },
+            1441: {
+                slidesPerView: 4
+            }
+
+        }
+    });
+});
+
+// const track = document.querySelector('.grid-projects');
+// const allProjects = Array.from(document.querySelectorAll('.project-card'));
+// const visibleCount = 3;
+// let currentIndex = 0;
+
+// function updateSlider() {
+//     track.innerHTML = ''; // نفضي المحتوى
+
+//     for (let i = 0; i < visibleCount; i++) {
+//         const index = (currentIndex + i) % allProjects.length;
+
+//         const clone = allProjects[index].cloneNode(true); // انسخ بدل ما تنقل
+//         track.appendChild(clone);
+//     }
+// }
+
+// function nextProject() {
+//     currentIndex = (currentIndex + 1) % allProjects.length;
+//     updateSlider();
+// }
+
+// function prevProject() {
+//     currentIndex = (currentIndex - 1 + allProjects.length) % allProjects.length;
+//     updateSlider();
+// }
+
+// document.addEventListener('DOMContentLoaded', updateSlider);
+
+
+
+
+
+
 // Profile Modal
 const profileImg = document.querySelector('.profile img'); // حدد صورة البروفايل
 const profileModal = document.getElementById('profileModal');
