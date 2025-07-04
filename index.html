@@ -12,21 +12,24 @@
     <title>Portfolio - Mohamed24</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></head>
 <body>
+    <!-- ================= Start Header Section ================= -->
     <header>
         <div class="container">
             <div class="title">Mohamed24</div>
             <button class="menu-button" aria-expanded="false" onclick="toggleMenu()">☰</button>
             <nav class="nav-menu">
                 <ul>
-                    <li><a href="#download">Download</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact Me</a></li>
+                    <li><a href="#download">Download</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    <!-- ================= End Header Section ================= -->
     
-
+    <!-- ================= Start Hero / Intro Section ================= -->
     <section class="hero animate">
         <div class="allSection">
             <div class="profile">
@@ -38,7 +41,9 @@
             </div>
         </div>
     </section>
-    <!-- Modal for Profile Picture -->
+    <!-- ================= End Hero / Intro Section ================= -->
+
+    <!-- ================= Start Modal for Profile Picture ================= -->
     <div id="profileModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -47,34 +52,100 @@
             </div>
         </div>
     </div>
+    <!-- ================= End Modal for Profile Picture ================= -->
 
-
-
-<!-- Start Projects -->
+    <!-- ================= Start Projects Section ================= -->
     <section id="projects" class="projects">
         <div class="container swiper">
             <h2 class="section-title">My Projects</h2>
             <div class="project-wrapper">
                 <ul class="project-list swiper-wrapper">
+                    <!-- Project 1 GeoEnergy -->
                     <li class="project-item swiper-slide">
-                        <div class="project-link" onclick="openModal('project1')">
+                        <div class="project-link" onclick="openModal(1)">
                             <img src="images/projects/geoenergy/main-image-geoenergy.png" alt="Project 1">
                             <p class="badge wordpress">Wordpress</p>
                             <h2 class="project-title">GeoEnergy</h2>
                         </div>
                     </li>
+                    <!-- Project 2 Sanad Digital -->
                     <li class="project-item swiper-slide">
-                        <div class="project-link" onclick="openModal('project2')">
-                            <img src="images/projects/mabani/main-image-mabani.jpg" alt="Project 2">
-                            <p class="badge wordpress">Wordpress</p>
-                            <h2 class="project-title">Mabani Aljazeera</h2>
+                        <div class="project-link" onclick="openModal(2)">
+                            <img src="images/projects/sanadDigital/main-image-sanad.jpg" alt="Project 11">
+                            <p class="badge custom-code">Custom code</p>
+                            <h2 class="project-title">Sanad Digital</h2>
                         </div>
                     </li>
+                    <!-- Project 3 Wellria -->
                     <li class="project-item swiper-slide">
-                        <div class="project-link" onclick="openModal('project3')">
+                        <div class="project-link" onclick="openModal(3)">
+                            <img src="images/projects/wellria/main-image-wellria.jpg" alt="Project 7">
+                            <p class="badge">Wordpress</p>
+                            <h2 class="project-title">Wellria</h2>
+                        </div>
+                    </li>
+                    <!-- Project 4 Peaky -->
+                    <li class="project-item swiper-slide">
+                        <div class="project-link" onclick="openModal(4)">
+                            <img src="images/projects/peaky/main-image-peaky.jpg" alt="Project 10">
+                            <p class="badge custom-code">Custom code</p>
+                            <h2 class="project-title">Peaky</h2>
+                        </div>
+                    </li>
+                    <!-- Project 5 Coup -->
+                    <li class="project-item swiper-slide">
+                        <div class="project-link" onclick="openModal(5)">
+                            <img src="images/projects/coup/main-image-coup.jpg" alt="Project 6">
+                            <p class="badge">Wordpress</p>
+                            <h2 class="project-title">Coup</h2>
+                        </div>
+                    </li>
+                    <!-- Project 6 Travel Boutique -->
+                    <li class="project-item swiper-slide">
+                        <div class="project-link" onclick="openModal(6)">
+                            <img src="images/projects/travelBoutique/main-image-travelBoutique.jpg" alt="Project 4">
+                            <p class="badge">Wordpress</p>
+                            <h2 class="project-title">Travel Boutique</h2>
+                        </div>
+                    </li>
+                    <!-- Project 7 GNetworx -->
+                    <li class="project-item swiper-slide">
+                        <div class="project-link" onclick="openModal(7)">
+                            <img src="images/projects/gnetworx/main-image-gnetworx.jpg" alt="Project 5">
+                            <p class="badge">Wordpress</p>
+                            <h2 class="project-title">GNetworx</h2>
+                        </div>
+                    </li>
+                    <!-- Project 8 Mosalamy -->
+                    <li class="project-item swiper-slide">
+                        <div class="project-link" onclick="openModal(8)">
+                            <img src="images/projects/mosalamy/main-image-mosalamy.jpg" alt="Project 8">
+                            <p class="badge">Wordpress</p>
+                            <h2 class="project-title">Mosalamy</h2>
+                        </div>
+                    </li>
+                    <!-- Project 9 Pyramids Secret -->
+                    <li class="project-item swiper-slide">
+                        <div class="project-link" onclick="openModal(9)">
+                            <img src="images/projects/pyramidSecret/main-image-pyramidSecret.jpg" alt="Project 9">
+                            <p class="badge">Wordpress</p>
+                            <h2 class="project-title">Pyramids Secret</h2>
+                        </div>
+                    </li>
+                    <!-- Project 10 Maxim -->
+                    <li class="project-item swiper-slide">
+                        <div class="project-link" onclick="openModal(10)">
                             <img src="images/projects/maxim/main-image-maxim.png" alt="Project 3">
                             <p class="badge">Wordpress</p>
                             <h2 class="project-title">Maxim</h2>
+                        </div>
+                    </li>
+                    <!-- Project 11 Mabani Aljazeera -->
+                    <li class="project-item swiper-slide">
+                        <div class="project-link" onclick="openModal(11)">
+                            <img src="images/projects/mabani/main-image-mabani.jpg" alt="Project 2">
+                            <p class="badge wordpress">Wordpress</p>
+                            <h2 class="project-title">Mabani Aljazeera</h2>
                         </div>
                     </li>
                 </ul>
@@ -84,67 +155,36 @@
             </div>
         </div>
     </section>
-    <!-- <section id="projects" class="projects">
-        <div class="allProjects">
-            <h2>My Projects</h2>
-            <button class="prev" onclick="prevProject()">❮</button>
-            <div class="grid-projects">
-                <div class="track">
-                    <div class="project-card" onclick="openModal('project1')">
-                        <img src="images/projects/geoenergy/main-image-geoenergy.png" alt="Project 1">
-                        <h3>GeoEnergy</h3>
-                    </div>
-                    <div class="project-card" onclick="openModal('project2')">
-                        <img src="images/projects/mabani/main-image-mabani.jpg" alt="Project 2">
-                        <h3>Mabani Aljazeera</h3>
-                    </div>
-                    <div class="project-card" onclick="openModal('project3')">
-                        <img src="images/projects/maxim/main-image-maxim.png" alt="Project 3">
-                        <h3>Maxim</h3>
-                    </div>
-                    <div class="project-card" onclick="openModal('project3')">
-                        <img src="images/projects/maxim/main-image-maxim.png" alt="Project 3">
-                        <h3>Maxim2</h3>
-                    </div>
-                    <div class="project-card" onclick="openModal('project3')">
-                        <img src="images/projects/maxim/main-image-maxim.png" alt="Project 3">
-                        <h3>Maxim3</h3>
-                    </div>
-                    <div class="project-card" onclick="openModal('project3')">
-                        <img src="images/projects/maxim/main-image-maxim.png" alt="Project 3">
-                        <h3>Maxim4</h3>
-                    </div>
-                </div>
-            </div>
-            <button class="next" onclick="nextProject()">❯</button>
-        </div>
-    </section> -->
-<!-- End Projects -->
+    <!-- ================= End Projects Section ================= -->
 
-
-    <!-- Modal -->
+    <!-- ================= Start Modal for Project Details ================= -->
     <div id="projectModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
             <h2 id="modalTitle"></h2>
             <div id="modalImages"></div>
             <div id="modalDescription"></div>
+            <a href="#" target="_blank" class="view-website">View Website</a>
         </div>
     </div>
+    <!-- ================= End Modal for Project Details ================= -->
     
-
+    <!-- ================= Start Skills Section ================= -->
     <section id="skills" class="skills animate">
         <h2>My Skills</h2>
         <div class="skill-list">
             <div class="skill-item animate">HTML/CSS/Bootstrap</div>
-            <div class="skill-item animate">PHP/Laravel</div>
-            <div class="skill-item animate">JavaScript Basics</div>
-            <div class="skill-item animate">WordPress</div>
+            <div class="skill-item animate">JavaScript</div>
+            <div class="skill-item animate">PHP/OOP</div>
             <div class="skill-item animate">SQL/MYSQL</div>
+            <div class="skill-item animate">WordPress</div>
             <div class="skill-item animate">JSON/API</div>
+            <div class="skill-item animate">Git/Github</div>
         </div>
     </section>
+    <!-- ================= End Skills Section ================= -->
 
+    <!-- ================= Start Contact Section ================= -->
     <section id="contact" class="contact">
         <h2>Contact Me</h2>
         <div class="contact-info">
@@ -194,15 +234,20 @@
             </div>
         </div>
     </section>
+    <!-- ================= End Contact Section ================= -->
     
+    <!-- ================= Start Download Section ================= -->
     <section id="download" class="download-section">
         <h2>Download My Portfolio Template</h2>
         <a href="template.zip" class="download-button" download aria-label="Download Portfolio Template">Download Now</a>
     </section>  
+    <!-- ================= End Download Section ================= -->
     
+    <!-- ================= Start Footer Section ================= -->
     <footer>
         <p>© 2024 Mohamed AbdElrasoul Ahmed. All rights reserved.</p>
     </footer>
+    <!-- ================= End Footer Section ================= -->
     <script src="mohamed.js"></script>
     <!-- Linking SwiperJS Script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
