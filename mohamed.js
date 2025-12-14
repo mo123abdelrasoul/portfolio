@@ -35,39 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// const track = document.querySelector('.grid-projects');
-// const allProjects = Array.from(document.querySelectorAll('.project-card'));
-// const visibleCount = 3;
-// let currentIndex = 0;
-
-// function updateSlider() {
-//     track.innerHTML = ''; // نفضي المحتوى
-
-//     for (let i = 0; i < visibleCount; i++) {
-//         const index = (currentIndex + i) % allProjects.length;
-
-//         const clone = allProjects[index].cloneNode(true); // انسخ بدل ما تنقل
-//         track.appendChild(clone);
-//     }
-// }
-
-// function nextProject() {
-//     currentIndex = (currentIndex + 1) % allProjects.length;
-//     updateSlider();
-// }
-
-// function prevProject() {
-//     currentIndex = (currentIndex - 1 + allProjects.length) % allProjects.length;
-//     updateSlider();
-// }
-
-// document.addEventListener('DOMContentLoaded', updateSlider);
-
-
-
-
-
-
 // Profile Modal
 const profileImg = document.querySelector('.profile img');
 const profileModal = document.getElementById('profileModal');
@@ -91,20 +58,20 @@ window.onclick = function(event) {
 
 // array of projects data
 const projects = [
-    // Project 1 GeoEnergy
+    // Project 1 Halwani Bros
     {
         'id': '1',
-        'title': 'GeoEnergy',
-        'description': 'The project was developed by me while working at e-motion Agency. The website for GeoEnergy comprehensively showcases the company services, products, and courses. GeoEnergy specializes in offering innovative solutions for exploration and production data management and provides advanced consultancy and software solutions for the geoscience and engineering fields. The platform also highlights their proprietary system Eco7, which helps companies efficiently manage and organize their data, whether its geophysical data, well logs, or production data.',
-        'link': 'https://geoenergy-eg.com',
+        'title': 'Halwani Bros',
+        'description': 'Halwani Bros Company is one of the most famous Saudi companies in manufacture and distribution of food field. Founded in 1950 in the city of Jeddah as a sample family business.',
+        'link': 'https://www.halwani.com',
         'images': 
         [
-            'images/projects/geoenergy/1.png',
-            'images/projects/geoenergy/2.png',
-            'images/projects/geoenergy/3.png',
-            'images/projects/geoenergy/4.png',
-            'images/projects/geoenergy/5.png',
-            'images/projects/geoenergy/6.png'
+            'images/projects/halwaniBros/1.png',
+            'images/projects/halwaniBros/2.png',
+            'images/projects/halwaniBros/3.png',
+            'images/projects/halwaniBros/4.png',
+            'images/projects/halwaniBros/5.png',
+            'images/projects/halwaniBros/6.png'
         ],
     },
     // Project 2 Sanad Digital
@@ -265,6 +232,70 @@ const projects = [
             'images/projects/mabani/4.png',
             'images/projects/mabani/5.png',
             'images/projects/mabani/6.png'
+        ],
+    },
+    // Project 12 Kian Fabrics
+    {
+        'id': '12',
+        'title': 'Kian Fabrics',
+        'description': 'Kayan Fabrics is a leading company in the textile industry, specializing in import of high-quality garment fabrics and advanced digital & sublimation printing services.',
+        'link': 'https://kianfabrics.com',
+        'images': 
+        [
+            'images/projects/kianFabrics/1.png',
+            'images/projects/kianFabrics/2.png',
+            'images/projects/kianFabrics/3.png',
+            'images/projects/kianFabrics/4.png',
+            'images/projects/kianFabrics/5.png',
+            'images/projects/kianFabrics/6.png'
+        ],
+    },
+    // Project 13 Cadena Globe
+    {
+        'id': '13',
+        'title': 'Cadena',
+        'description': 'Cadena Global is a trusted international sourcing and supply company, connecting businesses with high quality products and reliable solutions. We focus on transparency, professionalism, and long-term partnerships.',
+        'link': 'https://cadenaeg.com',
+        'images': 
+        [
+            'images/projects/cadena/1.png',
+            'images/projects/cadena/2.png',
+            'images/projects/cadena/3.png',
+            'images/projects/cadena/4.png',
+            'images/projects/cadena/5.png',
+            'images/projects/cadena/6.png'
+        ],
+    },
+    // Project 14 Gulf Arabian
+    {
+        'id': '14',
+        'title': 'Gulf Arabian',
+        'description': 'A modern WordPress website for Gulf Arabian that emphasizes corporate branding, services, and contact lead generation across devices.',
+        'link': 'https://gulfarabian.net',
+        'images': 
+        [
+            'images/projects/gulfArabian/1.png',
+            'images/projects/gulfArabian/2.png',
+            'images/projects/gulfArabian/3.png',
+            'images/projects/gulfArabian/4.png',
+            'images/projects/gulfArabian/5.png',
+            'images/projects/gulfArabian/6.png'
+        ],
+    },
+    // Project 15 GeoEnergy
+    {
+        'id': '1',
+        'title': 'GeoEnergy',
+        'description': 'The project was developed by me while working at e-motion Agency. The website for GeoEnergy comprehensively showcases the company services, products, and courses. GeoEnergy specializes in offering innovative solutions for exploration and production data management and provides advanced consultancy and software solutions for the geoscience and engineering fields. The platform also highlights their proprietary system Eco7, which helps companies efficiently manage and organize their data, whether its geophysical data, well logs, or production data.',
+        'link': 'https://geoenergy-eg.com',
+        'images': 
+        [
+            'images/projects/geoenergy/1.png',
+            'images/projects/geoenergy/2.png',
+            'images/projects/geoenergy/3.png',
+            'images/projects/geoenergy/4.png',
+            'images/projects/geoenergy/5.png',
+            'images/projects/geoenergy/6.png'
         ],
     },
 ];
