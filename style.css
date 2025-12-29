@@ -417,6 +417,7 @@ nav a:hover {
     justify-content: center;
     margin-bottom: 20px;
     margin-top: 20px;
+    margin-left: 15px;
     gap: 20px;
 }
 
