@@ -359,7 +359,13 @@ nav a:hover {
 
 @media (max-width: 768px) {
     .slider-container {
-        padding: 0 60px 0 70px;
+        padding: 0 20px 0 30px;
+    }
+    .slider-container .swiper-button-prev {
+        left: -5px;
+    }
+    .slider-container .swiper-button-prev {
+        right: -5px;
     }
 
     .swiper-slide-button {
