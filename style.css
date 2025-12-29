@@ -493,6 +493,28 @@ nav a:hover {
 
 /* End Internal Grouping Styles */
 
+@media (max-width: 768px) {
+    .projects-tabs {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .tab-btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .project-list .project-item .project-link .project-title {
+        font-size: 1.1rem;
+    }
+
+    .project-wrapper {
+        padding: 20px 10px;
+        /* Reduce side padding on mobile wrapper */
+    }
+}
+
 /* End Projects Style */
 
 /* Start Show Project Description Modal Section */
@@ -631,6 +653,33 @@ nav a:hover {
 }
 
 /* End Show Project Description Modal Section */
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+        padding: 15px;
+    }
+
+    .modal-swiper {
+        height: 250px;
+    }
+
+    .modal h2 {
+        font-size: 1.5rem;
+    }
+
+    .modal-swiper .swiper-button-next,
+    .modal-swiper .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+    }
+
+    .modal-swiper .swiper-button-next:after,
+    .modal-swiper .swiper-button-prev:after {
+        font-size: 12px;
+    }
+}
 
 /* Start Skills Section */
 .skills {
