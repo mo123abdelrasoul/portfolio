@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <!-- Linking SwiperJS CSS -->
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Portfolio - Mohamed24</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
 <body>
     <!-- ================= Start Header Section ================= -->
     <header>
@@ -22,13 +22,12 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact Me</a></li>
-                    <li><a href="#download">Download</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <!-- ================= End Header Section ================= -->
-    
+
     <!-- ================= Start Hero / Intro Section ================= -->
     <section class="hero animate">
         <div class="allSection">
@@ -36,8 +35,13 @@
                 <img src="images/profile/me.jpg" alt="Profile Picture" id="profileImage" style="cursor: pointer;">
             </div>
             <div class="intro">
-                <h1>Welcome to My Portfolionww</h1>
-                <p>I'm Mohamed Abd Elrasoul, a WordPress and BackEnd Developer based in Cairo, Egypt. I specialize in creating stunning WordPress websites that are not only visually appealing but also highly functional. My passion lies in crafting seamless user experiences and robust backend solutions for websites. I believe in the power of technology to bring ideas to life, and I'm excited to help businesses thrive in the digital landscape.</p>
+                <h1>Welcome to My Portfolio</h1>
+                <p>I am Mohamed Abd Elrasoul, a dedicated <strong>Backend & WordPress Developer</strong> based in Cairo,
+                    Egypt. With a strong foundation in <strong>PHP (Native & Laravel)</strong> and extensive experience
+                    in the <strong>WordPress</strong> ecosystem, I build scalable, high-performance web solutions. My
+                    expertise ranges from crafting custom themes and plugins to architecting complex backend systems
+                    that power modern web applications. I am passionate about clean code, efficient architecture, and
+                    delivering digital experiences that drive business growth.</p>
             </div>
         </div>
     </section>
@@ -56,135 +60,43 @@
 
     <!-- ================= Start Projects Section ================= -->
     <section id="projects" class="projects">
-        <div class="container swiper">
+        <div class="container">
             <h2 class="section-title">My Projects</h2>
-            <div class="project-wrapper">
-                <ul class="project-list swiper-wrapper">
-                    <!-- Project 1 Halwani Bros -->
-                    <li class="project-item swiper-slide">
-                        <div class="project-link" onclick="openModal(1)">
-                            <img src="images/projects/halwaniBros/main-image-halwaniBros.png" alt="Project 15">
-                            <p class="badge wordpress">Wordpress</p>
-                            <h2 class="project-title">Halwani Bros</h2>
-                        </div>
-                    </li>
-                    <!-- Project 2 Sanad Digital -->
-                    <li class="project-item swiper-slide">
-                        <div class="project-link" onclick="openModal(2)">
-                            <img src="images/projects/sanadDigital/main-image-sanad.jpg" alt="Project 11">
-                            <p class="badge custom-code">Custom code</p>
-                            <h2 class="project-title">Sanad Digital</h2>
-                        </div>
-                    </li>
-                    <!-- Project 3 Wellria -->
-                    <li class="project-item swiper-slide">
-                        <div class="project-link" onclick="openModal(3)">
-                            <img src="images/projects/wellria/main-image-wellria.jpg" alt="Project 7">
-                            <p class="badge">Wordpress</p>
-                            <h2 class="project-title">Wellria</h2>
-                        </div>
-                    </li>
-                    <!-- Project 4 Peaky -->
-                    <li class="project-item swiper-slide">
-                        <div class="project-link" onclick="openModal(4)">
-                            <img src="images/projects/peaky/main-image-peaky.jpg" alt="Project 10">
-                            <p class="badge custom-code">Custom code</p>
-                            <h2 class="project-title">Peaky</h2>
-                        </div>
-                    </li>
-                    <!-- Project 5 Coup -->
-                    <li class="project-item swiper-slide">
-                        <div class="project-link" onclick="openModal(5)">
-                            <img src="images/projects/coup/main-image-coup.jpg" alt="Project 6">
-                            <p class="badge">Wordpress</p>
-                            <h2 class="project-title">Coup</h2>
-                        </div>
-                    </li>
-                    <!-- Project 6 Travel Boutique -->
-                    <li class="project-item swiper-slide">
-                        <div class="project-link" onclick="openModal(6)">
-                            <img src="images/projects/travelBoutique/main-image-travelBoutique.jpg" alt="Project 4">
-                            <p class="badge">Wordpress</p>
-                            <h2 class="project-title">Travel Boutique</h2>
-                        </div>
-                    </li>
-                    <!-- Project 7 GNetworx -->
-                    <li class="project-item swiper-slide">
-                        <div class="project-link" onclick="openModal(7)">
-                            <img src="images/projects/gnetworx/main-image-gnetworx.jpg" alt="Project 5">
-                            <p class="badge">Wordpress</p>
-                            <h2 class="project-title">GNetworx</h2>
-                        </div>
-                    </li>
-                    <!-- Project 8 Mosalamy -->
-                    <li class="project-item swiper-slide">
-                        <div class="project-link" onclick="openModal(8)">
-                            <img src="images/projects/mosalamy/main-image-mosalamy.jpg" alt="Project 8">
-                            <p class="badge">Wordpress</p>
-                            <h2 class="project-title">Mosalamy</h2>
-                        </div>
-                    </li>
-                    <!-- Project 9 Pyramids Secret -->
-                    <li class="project-item swiper-slide">
-                        <div class="project-link" onclick="openModal(9)">
-                            <img src="images/projects/pyramidSecret/main-image-pyramidSecret.jpg" alt="Project 9">
-                            <p class="badge">Wordpress</p>
-                            <h2 class="project-title">Pyramids Secret</h2>
-                        </div>
-                    </li>
-                    <!-- Project 10 Maxim -->
-                    <li class="project-item swiper-slide">
-                        <div class="project-link" onclick="openModal(10)">
-                            <img src="images/projects/maxim/main-image-maxim.png" alt="Project 3">
-                            <p class="badge">Wordpress</p>
-                            <h2 class="project-title">Maxim</h2>
-                        </div>
-                    </li>
-                    <!-- Project 11 Mabani Aljazeera -->
-                    <li class="project-item swiper-slide">
-                        <div class="project-link" onclick="openModal(11)">
-                            <img src="images/projects/mabani/main-image-mabani.jpg" alt="Project 2">
-                            <p class="badge wordpress">Wordpress</p>
-                            <h2 class="project-title">Mabani Aljazeera</h2>
-                        </div>
-                    </li>
-                    <!-- Project 12 Kian Fabrics -->
-                    <li class="project-item swiper-slide">
-                        <div class="project-link" onclick="openModal(12)">
-                            <img src="images/projects/kianFabrics/main-image-kianFabrics.png" alt="Project 12">
-                            <p class="badge wordpress">Wordpress</p>
-                            <h2 class="project-title">Kian Fabrics</h2>
-                        </div>
-                    </li>
-                    <!-- Project 13 Cadena Globe -->
-                    <li class="project-item swiper-slide">
-                        <div class="project-link" onclick="openModal(13)">
-                            <img src="images/projects/cadena/main-image-cadena.png" alt="Project 13">
-                            <p class="badge wordpress">Wordpress</p>
-                            <h2 class="project-title">Cadena</h2>
-                        </div>
-                    </li>
-                    <!-- Project 14 Gulf Arabian -->
-                    <li class="project-item swiper-slide">
-                        <div class="project-link" onclick="openModal(14)">
-                            <img src="images/projects/gulfArabian/main-image-gulfArabian.png" alt="Project 14">
-                            <p class="badge wordpress">Wordpress</p>
-                            <h2 class="project-title">Gulf Arabian</h2>
-                        </div>
-                    </li>
-                    <!-- Project 15 GeoEnergy -->
-                    <li class="project-item swiper-slide">
-                        <div class="project-link" onclick="openModal(15)">
-                            <img src="images/projects/geoenergy/main-image-geoenergy.png" alt="Project 1">
-                            <p class="badge wordpress">Wordpress</p>
-                            <h2 class="project-title">GeoEnergy</h2>
-                        </div>
-                    </li>
-                </ul>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-slide-button swiper-button-prev"></div>
-                <div class="swiper-slide-button swiper-button-next"></div>
+
+            <!-- Projects Tabs -->
+            <div class="projects-tabs">
+                <button class="tab-btn active" onclick="openTab(event, 'wordpress')">WordPress Projects</button>
+                <button class="tab-btn" onclick="openTab(event, 'backend')">Backend & Full-stack</button>
             </div>
+
+            <!-- Tab 1: WordPress Projects -->
+            <div id="wordpress" class="tab-content active">
+                <div class="slider-container">
+                    <div class="project-wrapper swiper">
+                        <ul class="project-list swiper-wrapper" id="wordpress-list">
+                            <!-- Projects will be injected here via JavaScript -->
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+
+            <!-- Tab 2: Backend & Full-stack -->
+            <div id="backend" class="tab-content">
+                <div class="slider-container">
+                    <div class="project-wrapper swiper">
+                        <ul class="project-list swiper-wrapper" id="backend-list">
+                            <!-- Projects will be injected here via JavaScript -->
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+
         </div>
     </section>
     <!-- ================= End Projects Section ================= -->
@@ -200,18 +112,45 @@
         </div>
     </div>
     <!-- ================= End Modal for Project Details ================= -->
-    
+
     <!-- ================= Start Skills Section ================= -->
     <section id="skills" class="skills animate">
         <h2>My Skills</h2>
-        <div class="skill-list">
-            <div class="skill-item animate">HTML/CSS/Bootstrap</div>
-            <div class="skill-item animate">JavaScript</div>
-            <div class="skill-item animate">PHP/Laravel</div>
-            <div class="skill-item animate">SQL/MYSQL</div>
-            <div class="skill-item animate">WordPress</div>
-            <div class="skill-item animate">JSON/API</div>
-            <div class="skill-item animate">Git/Github</div>
+        <div class="skills-container">
+
+            <!-- Backend & CMS -->
+            <div class="skill-category">
+                <h3>Backend & CMS</h3>
+                <div class="skill-list">
+                    <div class="skill-item animate">PHP (Native & Laravel)</div>
+                    <div class="skill-item animate">WordPress Core</div>
+                    <div class="skill-item animate">SQL / MySQL</div>
+                    <div class="skill-item animate">API Development</div>
+                </div>
+            </div>
+
+            <!-- Frontend -->
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="skill-list">
+                    <div class="skill-item animate">HTML5 / CSS3</div>
+                    <div class="skill-item animate">JavaScript (ES6+)</div>
+                    <div class="skill-item animate">Bootstrap / Tailwind</div>
+                    <div class="skill-item animate">Responsive Design</div>
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="skill-category">
+                <h3>Tools & Workflow</h3>
+                <div class="skill-list">
+                    <div class="skill-item animate">Git / GitHub</div>
+                    <div class="skill-item animate">VS Code</div>
+                    <div class="skill-item animate">Command Line</div>
+                    <div class="skill-item animate">JSON</div>
+                </div>
+            </div>
+
         </div>
     </section>
     <!-- ================= End Skills Section ================= -->
@@ -219,69 +158,61 @@
     <!-- ================= Start Contact Section ================= -->
     <section id="contact" class="contact">
         <h2>Contact Me</h2>
-        <div class="contact-info">
-            <div class="info-item">
-                <a href="mailto:mbdalrswl24@gmail.com" class="contact-link">
-                    <i class="fas fa-envelope"></i>
-                    <span>Email: mbdalrswl24@gmail.com</span>
-                </a>
-            </div>
-            <div class="info-item">
-                <a href="https://wa.me/201289592074" class="contact-link">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>WhatsApp: 01289592074</span>
-                </a>
-            </div>
-            <div class="info-item">
-                <a href="tel:+201289592074" class="contact-link">
-                        <i class="fas fa-phone"></i>
-                        <span>Phone: 01289592074</span>
-                </a>
-            </div>
-            <div class="info-item social-links">
-                <a href="https://www.linkedin.com/in/mohamed-abdelrasoul8a6a7a239" class="contact-link" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                    <span>LinkedIn</span>
-                </a>
-                <a href="https://github.com/mo123abdelrasoul" class="contact-link" target="_blank">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=100008890410511" class="contact-link" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                    <span>Facebook</span>
-                </a>
-                <a href="https://www.instagram.com/mohamed_abd_elrasoul_12" class="contact-link" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                    <span>Instagram</span>
-                </a>
-                <a href="https://x.com/MoAbdElrasoul24" class="contact-link" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                    <span>Twitter</span>
-                </a>
-                <a href="https://t.me/MoAbdElrasoul24" class="contact-link" target="_blank">
-                    <i class="fab fa-telegram"></i>
-                    <span>Telegram</span>
-                </a>
-            </div>
+        <p class="contact-intro">Let's Build Something Amazing Together. I'm always open to discussing new projects,
+            creative ideas, or opportunities to be part of your vision. Whether you have a question or just want to say
+            hi, feel free to reach out!</p>
+        <div class="contact-grid">
+            <a href="mailto:mbdalrswl24@gmail.com" class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <span>Email Me</span>
+            </a>
+            <a href="https://wa.me/201289592074" class="contact-card">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+            <a href="tel:+201289592074" class="contact-card">
+                <i class="fas fa-phone"></i>
+                <span>Call Me</span>
+            </a>
+            <a href="https://www.linkedin.com/in/mohamed-abdelrasoul8a6a7a239" class="contact-card" target="_blank">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/mo123abdelrasoul" class="contact-card" target="_blank">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100008890410511" class="contact-card" target="_blank">
+                <i class="fab fa-facebook"></i>
+                <span>Facebook</span>
+            </a>
+            <a href="https://www.instagram.com/mohamed_abd_elrasoul_12" class="contact-card" target="_blank">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+            <a href="https://x.com/MoAbdElrasoul24" class="contact-card" target="_blank">
+                <i class="fab fa-twitter"></i>
+                <span>Twitter</span>
+            </a>
+            <a href="https://t.me/MoAbdElrasoul24" class="contact-card" target="_blank">
+                <i class="fab fa-telegram"></i>
+                <span>Telegram</span>
+            </a>
         </div>
     </section>
     <!-- ================= End Contact Section ================= -->
-    
-    <!-- ================= Start Download Section ================= -->
-    <section id="download" class="download-section">
-        <h2>Download My Portfolio Template</h2>
-        <a href="template.zip" class="download-button" download aria-label="Download Portfolio Template">Download Now</a>
-    </section>  
-    <!-- ================= End Download Section ================= -->
-    
+
     <!-- ================= Start Footer Section ================= -->
     <footer>
-        <p>© 2024 Mohamed AbdElrasoul Ahmed. All rights reserved.</p>
+        <p>© <span id="year"></span> Mohamed AbdElrasoul Ahmed. All rights reserved.</p>
     </footer>
     <!-- ================= End Footer Section ================= -->
-    <script src="mohamed.js"></script>
-    <!-- Linking SwiperJS Script -->
+    <!-- Linking SwiperJS Script (load before scripts that use it) -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="mohamed.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
+
 </html>
