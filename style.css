@@ -486,7 +486,7 @@ nav a:hover {
 }
 
 .project-list .project-item .project-link .badge.laravel {
-    background: #ff2d20;
+    background: #f53003;
 
     color: white;
 }
@@ -587,8 +587,7 @@ nav a:hover {
 /* Modal Gallery - Using Swiper */
 .modal-swiper {
     width: 100%;
-    height: 400px;
-
+    max-height: 600px;
     margin: 20px 0;
     background: #000;
     border-radius: 10px;
@@ -668,7 +667,7 @@ nav a:hover {
     }
 
     .modal-swiper {
-        height: 250px;
+        height: 350px;
     }
 
     .modal h2 {

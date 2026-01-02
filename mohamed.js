@@ -99,27 +99,59 @@ const projects = [
                 'images/projects/halwaniBros/3.png',
                 'images/projects/halwaniBros/4.png',
                 'images/projects/halwaniBros/5.png',
-                'images/projects/halwaniBros/6.png'
+                'images/projects/halwaniBros/6.png',
+                'images/projects/halwaniBros/7.png'
             ],
     },
-    // Project 2 Sanad Digital
+    // Project 2 Mstore24
     {
         'id': '2',
-        'title': 'Sanad Digital',
+        'title': 'Mstore24',
         'category': 'backend',
         'badge': 'Laravel',
         'badgeClass': 'laravel',
-        'description': 'Sanad Digital is a pioneering platform that redefines financial sharing through a fully digital system. As a major step in digital transformation, Sanad Digital enables true financial cooperation, allowing every member to positively impact the lives of others. The project is built on the foundation of collaboration and community, offering a unique opportunity for users to join and benefit from a new era of digital finance. Opportunity comes once, take it and register your membership now and be a member of our Sanad Digital world. I developed the backend for this project, ensuring robust, efficient, and scalable operations for all users.',
-        'link': 'https://sanaddigital.com',
+        'description': 'Mstore24 is a multi-vendor e-commerce website built with Laravel, where multiple vendors can register, manage their products, and sell through a single platform. The system includes separate dashboards for admins and vendors, smooth product and order management, and a user-friendly shopping experience for customers.',
+        'link': 'https://mstore24.42web.io',
         'images':
-            [
-                'images/projects/sanadDigital/1.jpg',
-                'images/projects/sanadDigital/2.jpg',
-                'images/projects/sanadDigital/3.jpg',
-                'images/projects/sanadDigital/4.jpg',
-                'images/projects/sanadDigital/5.jpg',
-                'images/projects/sanadDigital/6.jpg'
-            ],
+        [
+            'images/projects/mstore24/1.png',
+            'images/projects/mstore24/2.png',
+            'images/projects/mstore24/3.png',
+            'images/projects/mstore24/4.png',
+            'images/projects/mstore24/5.png',
+            'images/projects/mstore24/6.png',
+            'images/projects/mstore24/7.png',
+            'images/projects/mstore24/8.png',
+            'images/projects/mstore24/9.png',
+            'images/projects/mstore24/10.png',
+            'images/projects/mstore24/11.png',
+            'images/projects/mstore24/12.png',
+            'images/projects/mstore24/13.png',
+            'images/projects/mstore24/14.png',
+            'images/projects/mstore24/15.png',
+            'images/projects/mstore24/16.png',
+            'images/projects/mstore24/17.png',
+            'images/projects/mstore24/18.png',
+            'images/projects/mstore24/19.png',
+            'images/projects/mstore24/20.png',
+            'images/projects/mstore24/21.png',
+            'images/projects/mstore24/22.png',
+            'images/projects/mstore24/23.png',
+            'images/projects/mstore24/24.png',
+            'images/projects/mstore24/25.png',
+            'images/projects/mstore24/26.png',
+            'images/projects/mstore24/27.png',
+            'images/projects/mstore24/28.png',
+            'images/projects/mstore24/29.png',
+            'images/projects/mstore24/30.png',
+            'images/projects/mstore24/31.png',
+            'images/projects/mstore24/32.png',
+            'images/projects/mstore24/33.png',
+            'images/projects/mstore24/34.png',
+            'images/projects/mstore24/35.png',
+            'images/projects/mstore24/36.png',
+            'images/projects/mstore24/37.png',
+        ],
     },
     // Project 3 Wellria
     {
@@ -137,7 +169,8 @@ const projects = [
                 'images/projects/wellria/3.jpg',
                 'images/projects/wellria/4.jpg',
                 'images/projects/wellria/5.jpg',
-                'images/projects/wellria/6.jpg'
+                'images/projects/wellria/6.jpg',
+                'images/projects/wellria/7.jpg'
             ],
     },
     // Project 4 Peaky
@@ -145,9 +178,9 @@ const projects = [
         'id': '4',
         'title': 'Peaky',
         'category': 'backend',
-        'badge': 'PHP',
+        'badge': 'PHP Native',
         'badgeClass': 'php',
-        'description': 'Peaky is an online store specializing in high-quality, stylish T-shirts crafted with premium fabrics. I developed this project entirely from scratch, handling both the front-end and back-end to ensure a seamless and robust user experience. The website showcases a wide variety of unique designs, with a focus on exceptional comfort and durability, delivering products that not only look great but also feel amazing to wear.',
+        'description': '<strong>Peaky</strong> is an online store specializing in high-quality, stylish T-shirts crafted with premium fabrics. <br>I <strong>developed this project entirely from scratch using PHP Native</strong>, handling <strong>both the front-end and back-end</strong> to ensure a seamless and robust user experience. The website showcases a wide variety of unique designs, focusing on exceptional comfort and durability, delivering products that not only look great but also feel amazing to wear.',
         'link': 'http://peaky24.free.nf',
         'images':
             [
@@ -156,31 +189,13 @@ const projects = [
                 'images/projects/peaky/3.jpg',
                 'images/projects/peaky/4.jpg',
                 'images/projects/peaky/5.jpg',
-                'images/projects/peaky/6.jpg'
+                'images/projects/peaky/6.jpg',
+                'images/projects/peaky/7.jpg'
             ],
     },
-    // Project 5 Coup
+    // Project 5 Travel Boutique
     {
         'id': '5',
-        'title': 'Coup',
-        'category': 'wordpress',
-        'badge': 'WordPress',
-        'badgeClass': 'wordpress',
-        'description': 'Coup is an e-commerce platform designed to offer users a seamless online shopping experience. The website features a modern and intuitive interface, allowing customers to browse a wide range of products, discover exclusive deals, and make secure purchases with ease. Coup aims to provide high-quality products and exceptional customer service, making online shopping convenient and enjoyable for everyone.',
-        'link': 'https://coupeg.com',
-        'images':
-            [
-                'images/projects/coup/1.jpg',
-                'images/projects/coup/2.jpg',
-                'images/projects/coup/3.jpg',
-                'images/projects/coup/4.jpg',
-                'images/projects/coup/5.jpg',
-                'images/projects/coup/6.jpg'
-            ],
-    },
-    // Project 6 Travel Boutique
-    {
-        'id': '6',
         'title': 'Travel Boutique',
         'category': 'wordpress',
         'badge': 'WordPress',
@@ -194,7 +209,28 @@ const projects = [
                 'images/projects/travelBoutique/3.jpg',
                 'images/projects/travelBoutique/4.jpg',
                 'images/projects/travelBoutique/5.jpg',
-                'images/projects/travelBoutique/6.jpg'
+                'images/projects/travelBoutique/6.jpg',
+                'images/projects/travelBoutique/7.jpg'
+            ],
+    },
+    // Project 6 GeoEnergy
+    {
+        'id': '6',
+        'title': 'GeoEnergy',
+        'category': 'wordpress',
+        'badge': 'WordPress',
+        'badgeClass': 'wordpress',
+        'description': 'The project was developed by me while working at e-motion Agency. The website for GeoEnergy comprehensively showcases the company services, products, and courses. GeoEnergy specializes in offering innovative solutions for exploration and production data management and provides advanced consultancy and software solutions for the geoscience and engineering fields. The platform also highlights their proprietary system Eco7, which helps companies efficiently manage and organize their data, whether its geophysical data, well logs, or production data.',
+        'link': 'https://geoenergy-eg.com',
+        'images':
+            [
+                'images/projects/geoenergy/1.png',
+                'images/projects/geoenergy/2.png',
+                'images/projects/geoenergy/3.png',
+                'images/projects/geoenergy/4.png',
+                'images/projects/geoenergy/5.png',
+                'images/projects/geoenergy/6.png',
+                'images/projects/geoenergy/7.png'
             ],
     },
     // Project 7 GNetworx
@@ -213,7 +249,8 @@ const projects = [
                 'images/projects/gnetworx/3.jpg',
                 'images/projects/gnetworx/4.jpg',
                 'images/projects/gnetworx/5.jpg',
-                'images/projects/gnetworx/6.jpg'
+                'images/projects/gnetworx/6.jpg',
+                'images/projects/gnetworx/7.jpg'
             ],
     },
     // Project 8 Mosalamy
@@ -232,7 +269,8 @@ const projects = [
                 'images/projects/mosalamy/3.jpg',
                 'images/projects/mosalamy/4.jpg',
                 'images/projects/mosalamy/5.jpg',
-                'images/projects/mosalamy/6.jpg'
+                'images/projects/mosalamy/6.jpg',
+                'images/projects/mosalamy/7.jpg'
             ],
     },
     // Project 9 Pyramids Secret
@@ -251,7 +289,8 @@ const projects = [
                 'images/projects/pyramidSecret/3.jpg',
                 'images/projects/pyramidSecret/4.jpg',
                 'images/projects/pyramidSecret/5.jpg',
-                'images/projects/pyramidSecret/6.jpg'
+                'images/projects/pyramidSecret/6.jpg',
+                'images/projects/pyramidSecret/7.jpg'
             ],
     },
     // Project 10 Maxim
@@ -270,7 +309,8 @@ const projects = [
                 'images/projects/maxim/3.png',
                 'images/projects/maxim/4.png',
                 'images/projects/maxim/5.png',
-                'images/projects/maxim/6.png'
+                'images/projects/maxim/6.png',
+                'images/projects/maxim/7.png'
             ],
     },
     // Project 11 Mabani Aljazeera
@@ -284,12 +324,13 @@ const projects = [
         'link': 'https://mabani.com.sa',
         'images':
             [
-                'images/projects/mabani/1.png',
+                'images/projects/mabani/1.jpg',
                 'images/projects/mabani/2.png',
                 'images/projects/mabani/3.png',
                 'images/projects/mabani/4.png',
                 'images/projects/mabani/5.png',
-                'images/projects/mabani/6.png'
+                'images/projects/mabani/6.png',
+                'images/projects/mabani/7.png'
             ],
     },
     // Project 12 Kian Fabrics
@@ -308,7 +349,8 @@ const projects = [
                 'images/projects/kianFabrics/3.png',
                 'images/projects/kianFabrics/4.png',
                 'images/projects/kianFabrics/5.png',
-                'images/projects/kianFabrics/6.png'
+                'images/projects/kianFabrics/6.png',
+                'images/projects/kianFabrics/7.png'
             ],
     },
     // Project 13 Cadena Globe
@@ -327,7 +369,8 @@ const projects = [
                 'images/projects/cadena/3.png',
                 'images/projects/cadena/4.png',
                 'images/projects/cadena/5.png',
-                'images/projects/cadena/6.png'
+                'images/projects/cadena/6.png',
+                'images/projects/cadena/7.png'
             ],
     },
     // Project 14 Gulf Arabian
@@ -346,26 +389,48 @@ const projects = [
                 'images/projects/gulfArabian/3.png',
                 'images/projects/gulfArabian/4.png',
                 'images/projects/gulfArabian/5.png',
-                'images/projects/gulfArabian/6.png'
+                'images/projects/gulfArabian/6.png',
+                'images/projects/gulfArabian/7.png'
             ],
     },
-    // Project 15 GeoEnergy
+    // Project 15 Coup
     {
         'id': '15',
-        'title': 'GeoEnergy',
+        'title': 'Coup',
         'category': 'wordpress',
         'badge': 'WordPress',
         'badgeClass': 'wordpress',
-        'description': 'The project was developed by me while working at e-motion Agency. The website for GeoEnergy comprehensively showcases the company services, products, and courses. GeoEnergy specializes in offering innovative solutions for exploration and production data management and provides advanced consultancy and software solutions for the geoscience and engineering fields. The platform also highlights their proprietary system Eco7, which helps companies efficiently manage and organize their data, whether its geophysical data, well logs, or production data.',
-        'link': 'https://geoenergy-eg.com',
+        'description': 'Coup is an e-commerce platform designed to offer users a seamless online shopping experience. The website features a modern and intuitive interface, allowing customers to browse a wide range of products, discover exclusive deals, and make secure purchases with ease. Coup aims to provide high-quality products and exceptional customer service, making online shopping convenient and enjoyable for everyone.',
+        'link': 'https://coupeg.com',
         'images':
             [
-                'images/projects/geoenergy/1.png',
-                'images/projects/geoenergy/2.png',
-                'images/projects/geoenergy/3.png',
-                'images/projects/geoenergy/4.png',
-                'images/projects/geoenergy/5.png',
-                'images/projects/geoenergy/6.png'
+                'images/projects/coup/1.jpg',
+                'images/projects/coup/2.jpg',
+                'images/projects/coup/3.jpg',
+                'images/projects/coup/4.jpg',
+                'images/projects/coup/5.jpg',
+                'images/projects/coup/6.jpg',
+                'images/projects/coup/7.jpg'
+            ],
+    },
+    // Project 16 Sanad Digital
+    {
+        'id': '2',
+        'title': 'Sanad Digital',
+        'category': 'backend',
+        'badge': 'Laravel',
+        'badgeClass': 'laravel',
+        'description': 'Sanad Digital is a pioneering platform that redefines financial sharing through a fully digital system. As a major step in digital transformation, it enables true financial cooperation, allowing each member to positively impact the lives of others. The project is built on collaboration and community, offering users the opportunity to benefit from a new era of digital finance. <br>I developed the backend and RESTful APIs for this project, focusing on building secure, efficient, and scalable systems that support seamless user interactions and reliable platform operations.',
+        'link': 'https://sanaddigital.com',
+        'images':
+            [
+                'images/projects/sanadDigital/1.jpg',
+                'images/projects/sanadDigital/2.jpg',
+                'images/projects/sanadDigital/3.jpg',
+                'images/projects/sanadDigital/4.jpg',
+                'images/projects/sanadDigital/5.jpg',
+                'images/projects/sanadDigital/6.jpg',
+                'images/projects/sanadDigital/7.jpg'
             ],
     },
 ];
