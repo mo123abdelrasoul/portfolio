@@ -4,55 +4,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mohamed Abd Elrasoul - Backend & WordPress Developer based in Cairo, Egypt. Specializing in PHP, Laravel, and WordPress development.">
+    <title>Mohamed Abd Elrasoul | Backend & WordPress Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
-    <!-- Linking SwiperJS CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <title>Portfolio - Mohamed24</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
+    <!-- ================= Custom Cursor ================= -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
     <!-- ================= Start Header Section ================= -->
-    <header>
-        <div class="container">
-            <div class="title">Mohamed24</div>
-            <button class="menu-button" aria-expanded="false" onclick="toggleMenu()">☰</button>
-            <nav class="nav-menu">
+    <header id="mainHeader">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <span class="logo-text">M</span><span class="logo-accent">24</span>
+            </a>
+            <button class="menu-button" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
                 <ul>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
+                    <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+                    <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                    <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <!-- ================= End Header Section ================= -->
 
-    <!-- ================= Start Hero / Intro Section ================= -->
-    <section class="hero animate">
-        <div class="allSection">
-            <div class="profile">
-                <img src="images/profile/me.jpg" alt="Profile Picture" id="profileImage" style="cursor: pointer;">
+    <!-- ================= Start Hero Section ================= -->
+    <section id="hero" class="hero">
+        <!-- Animated background -->
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-glow hero-glow--1"></div>
+            <div class="hero-glow hero-glow--2"></div>
+            <canvas id="particleCanvas"></canvas>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for new projects
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Hi, I'm</span>
+                    <span class="hero-name">Mohamed<br>Abd Elrasoul</span>
+                </h1>
+                <div class="hero-role">
+                    <span class="role-prefix">&lt;</span>
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="typewriter-cursor">|</span>
+                    <span class="role-suffix">/&gt;</span>
+                </div>
+                <p class="hero-description">
+                    I build scalable, high-performance web solutions with
+                    <strong>PHP, Laravel</strong> and the <strong>WordPress</strong> ecosystem.
+                    From custom themes & plugins to complex backend architectures.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Get in Touch</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="20">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Years Exp.</span>
+                    </div>
+                </div>
             </div>
-            <div class="intro">
-                <h1>Welcome to My Portfolio</h1>
-                <p>I am Mohamed Abd Elrasoul, a dedicated <strong>Backend & WordPress Developer</strong> based in Cairo,
-                    Egypt. With a strong foundation in <strong>PHP (Native & Laravel)</strong> and extensive experience
-                    in the <strong>WordPress</strong> ecosystem, I build scalable, high-performance web solutions. My
-                    expertise ranges from crafting custom themes and plugins to architecting complex backend systems
-                    that power modern web applications. I am passionate about clean code, efficient architecture, and
-                    delivering digital experiences that drive business growth.</p>
+            <div class="hero-visual">
+                <div class="profile-card">
+                    <div class="profile-ring">
+                        <svg viewBox="0 0 300 300" class="ring-svg">
+                            <defs>
+                                <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#4f7df9" />
+                                    <stop offset="100%" style="stop-color:#7c3aed" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="150" cy="150" r="145" class="ring-track" />
+                            <circle cx="150" cy="150" r="145" class="ring-progress" stroke="url(#ringGradient)" />
+                        </svg>
+                    </div>
+                    <div class="profile-image-wrapper">
+                        <img src="images/profile/me.jpg" alt="Mohamed Abd Elrasoul" id="profileImage" loading="eager">
+                    </div>
+                    <!-- Floating tech icons -->
+                    <div class="floating-icon floating-icon--1"><i class="fab fa-php"></i></div>
+                    <div class="floating-icon floating-icon--2"><i class="fab fa-laravel"></i></div>
+                    <div class="floating-icon floating-icon--3"><i class="fab fa-wordpress"></i></div>
+                    <div class="floating-icon floating-icon--4"><i class="fas fa-database"></i></div>
+                    <div class="floating-icon floating-icon--5"><i class="fab fa-js"></i></div>
+                </div>
             </div>
         </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
     </section>
-    <!-- ================= End Hero / Intro Section ================= -->
+    <!-- ================= End Hero Section ================= -->
 
     <!-- ================= Start Modal for Profile Picture ================= -->
     <div id="profileModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <div class="profileModalImg">
-                <img id="profileImage" src="images/profile/me.jpg" alt="Profile Picture">
+                <img src="images/profile/me.jpg" alt="Profile Picture">
             </div>
         </div>
     </div>
@@ -61,158 +152,164 @@
     <!-- ================= Start Projects Section ================= -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">My Projects</h2>
+            <div class="section-header gs-reveal">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A curated selection of my recent work in backend development and WordPress
+                </p>
+            </div>
 
             <!-- Projects Tabs -->
-            <div class="projects-tabs">
-                <button class="tab-btn active" onclick="openTab(event, 'backend')">Backend & Full-stack</button>
-                <button class="tab-btn" onclick="openTab(event, 'wordpress')">WordPress Projects</button>
+            <div class="projects-tabs gs-reveal">
+                <button class="tab-btn active" onclick="openTab(event, 'backend')">
+                    <i class="fas fa-code"></i>
+                    <span>Backend & Full-stack</span>
+                </button>
+                <button class="tab-btn" onclick="openTab(event, 'wordpress')">
+                    <i class="fab fa-wordpress-simple"></i>
+                    <span>WordPress Projects</span>
+                </button>
             </div>
 
             <!-- Tab 1: Backend & Full-stack -->
             <div id="backend" class="tab-content active">
-                <div class="slider-container">
-                    <div class="project-wrapper swiper">
-                        <ul class="project-list swiper-wrapper" id="backend-list">
-                            <!-- Projects will be injected here via JavaScript -->
-                        </ul>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                    <div class="swiper-slide-button swiper-button-prev"></div>
-                    <div class="swiper-slide-button swiper-button-next"></div>
+                <div class="swiper mobile-swiper">
+                    <ul class="project-grid swiper-wrapper" id="backend-list">
+                        <!-- Projects will be injected here via JavaScript -->
+                    </ul>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
 
             <!-- Tab 2: WordPress Projects -->
             <div id="wordpress" class="tab-content">
-                <div class="slider-container">
-                    <div class="project-wrapper swiper">
-                        <ul class="project-list swiper-wrapper" id="wordpress-list">
-                            <!-- Projects will be injected here via JavaScript -->
-                        </ul>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                    <div class="swiper-slide-button swiper-button-prev"></div>
-                    <div class="swiper-slide-button swiper-button-next"></div>
+                <div class="swiper mobile-swiper">
+                    <ul class="project-grid swiper-wrapper" id="wordpress-list">
+                        <!-- Projects will be injected here via JavaScript -->
+                    </ul>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
-
         </div>
     </section>
     <!-- ================= End Projects Section ================= -->
 
-    <!-- ================= Start Modal for Project Details ================= -->
-    <div id="projectModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2 id="modalTitle"></h2>
-            <div id="modalImages"></div>
-            <div id="modalDescription"></div>
-            <a href="#" target="_blank" class="view-website">View Website</a>
+    <!-- ================= Start Slide-in Panel for Project Details ================= -->
+    <div id="panelOverlay" class="panel-overlay"></div>
+    <div id="projectPanel" class="slide-panel">
+        <div class="panel-header">
+            <h2 id="panelTitle"></h2>
+            <span class="close-panel" onclick="closeProjectPanel()">&times;</span>
+        </div>
+        <div class="panel-content">
+            <div id="panelImages"></div>
+            <div id="panelDescription"></div>
+            <a href="#" target="_blank" class="panel-view-website view-website">
+                <span>View Website</span>
+                <i class="fas fa-external-link-alt"></i>
+            </a>
         </div>
     </div>
-    <!-- ================= End Modal for Project Details ================= -->
+    <!-- ================= End Slide-in Panel for Project Details ================= -->
 
     <!-- ================= Start Skills Section ================= -->
-    <section id="skills" class="skills animate">
-        <h2>My Skills</h2>
-        <div class="skills-container">
-
-            <!-- Backend & CMS -->
-            <div class="skill-category">
-                <h3>Backend & CMS</h3>
-                <div class="skill-list">
-                    <div class="skill-item animate">PHP (Native & Laravel)</div>
-                    <div class="skill-item animate">WordPress Core</div>
-                    <div class="skill-item animate">SQL / MySQL</div>
-                    <div class="skill-item animate">API Development</div>
-                </div>
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header gs-reveal">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Technologies I work with to bring ideas to life</p>
             </div>
-
-            <!-- Frontend -->
-            <div class="skill-category">
-                <h3>Frontend</h3>
-                <div class="skill-list">
-                    <div class="skill-item animate">HTML5 / CSS3</div>
-                    <div class="skill-item animate">JavaScript (ES6+)</div>
-                    <div class="skill-item animate">Bootstrap / Tailwind</div>
-                    <div class="skill-item animate">Responsive Design</div>
-                </div>
+            <div class="skills-container">
+                <!-- Skills will be injected here via JavaScript -->
             </div>
-
-            <!-- Tools -->
-            <div class="skill-category">
-                <h3>Tools & Workflow</h3>
-                <div class="skill-list">
-                    <div class="skill-item animate">Git / GitHub</div>
-                    <div class="skill-item animate">VS Code</div>
-                    <div class="skill-item animate">Command Line</div>
-                    <div class="skill-item animate">JSON</div>
-                </div>
-            </div>
-
         </div>
     </section>
     <!-- ================= End Skills Section ================= -->
 
     <!-- ================= Start Contact Section ================= -->
     <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p class="contact-intro">Let's Build Something Amazing Together. I'm always open to discussing new projects,
-            creative ideas, or opportunities to be part of your vision. Whether you have a question or just want to say
-            hi, feel free to reach out!</p>
-        <div class="contact-grid">
-            <a href="mailto:mbdalrswl24@gmail.com" class="contact-card">
-                <i class="fas fa-envelope"></i>
-                <span>Email Me</span>
-            </a>
-            <a href="https://wa.me/201289592074" class="contact-card">
-                <i class="fab fa-whatsapp"></i>
-                <span>WhatsApp</span>
-            </a>
-            <a href="tel:+201289592074" class="contact-card">
-                <i class="fas fa-phone"></i>
-                <span>Call Me</span>
-            </a>
-            <a href="https://www.linkedin.com/in/mohamed-abdelrasoul8a6a7a239" class="contact-card" target="_blank">
-                <i class="fab fa-linkedin"></i>
-                <span>LinkedIn</span>
-            </a>
-            <a href="https://github.com/mo123abdelrasoul" class="contact-card" target="_blank">
-                <i class="fab fa-github"></i>
-                <span>GitHub</span>
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=100008890410511" class="contact-card" target="_blank">
-                <i class="fab fa-facebook"></i>
-                <span>Facebook</span>
-            </a>
-            <a href="https://www.instagram.com/mohamed_abd_elrasoul_12" class="contact-card" target="_blank">
-                <i class="fab fa-instagram"></i>
-                <span>Instagram</span>
-            </a>
-            <a href="https://x.com/MoAbdElrasoul24" class="contact-card" target="_blank">
-                <i class="fab fa-twitter"></i>
-                <span>Twitter</span>
-            </a>
-            <a href="https://t.me/MoAbdElrasoul24" class="contact-card" target="_blank">
-                <i class="fab fa-telegram"></i>
-                <span>Telegram</span>
-            </a>
+        <div class="container">
+            <div class="section-header gs-reveal">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">I'm always open to discussing new projects, creative ideas, or opportunities
+                    to be part of your vision.</p>
+            </div>
+            <div class="contact-grid gs-reveal">
+                <a href="mailto:mbdalrswl24@gmail.com" class="contact-card" id="contact-email">
+                    <div class="contact-icon-wrap"><i class="fas fa-envelope"></i></div>
+                    <span>Email Me</span>
+                </a>
+                <a href="https://wa.me/201289592074" class="contact-card" id="contact-whatsapp">
+                    <div class="contact-icon-wrap"><i class="fab fa-whatsapp"></i></div>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="tel:+201289592074" class="contact-card" id="contact-phone">
+                    <div class="contact-icon-wrap"><i class="fas fa-phone"></i></div>
+                    <span>Call Me</span>
+                </a>
+                <a href="https://www.linkedin.com/in/mohamed-abdelrasoul8a6a7a239" class="contact-card" target="_blank"
+                    id="contact-linkedin">
+                    <div class="contact-icon-wrap"><i class="fab fa-linkedin"></i></div>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/mo123abdelrasoul" class="contact-card" target="_blank" id="contact-github">
+                    <div class="contact-icon-wrap"><i class="fab fa-github"></i></div>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100008890410511" class="contact-card" target="_blank"
+                    id="contact-facebook">
+                    <div class="contact-icon-wrap"><i class="fab fa-facebook"></i></div>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/mohamed_abd_elrasoul_12" class="contact-card" target="_blank"
+                    id="contact-instagram">
+                    <div class="contact-icon-wrap"><i class="fab fa-instagram"></i></div>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://x.com/MoAbdElrasoul24" class="contact-card" target="_blank" id="contact-twitter">
+                    <div class="contact-icon-wrap"><i class="fab fa-twitter"></i></div>
+                    <span>Twitter</span>
+                </a>
+                <a href="https://t.me/MoAbdElrasoul24" class="contact-card" target="_blank" id="contact-telegram">
+                    <div class="contact-icon-wrap"><i class="fab fa-telegram"></i></div>
+                    <span>Telegram</span>
+                </a>
+            </div>
         </div>
     </section>
     <!-- ================= End Contact Section ================= -->
 
     <!-- ================= Start Footer Section ================= -->
     <footer>
-        <p>© <span id="year"></span> Mohamed AbdElrasoul Ahmed. All rights reserved.</p>
+        <div class="footer-inner">
+            <a href="#" class="footer-logo">
+                <span class="logo-text">M</span><span class="logo-accent">24</span>
+            </a>
+            <p>&copy; <span id="year"></span> Mohamed Abd Elrasoul. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/mo123abdelrasoul" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mohamed-abdelrasoul8a6a7a239" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/MoAbdElrasoul24" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
     </footer>
     <!-- ================= End Footer Section ================= -->
-    <!-- Linking SwiperJS Script (load before scripts that use it) -->
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Scroll back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="mohamed.js"></script>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
